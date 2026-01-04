@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./bookingForm.css";
 import { submitBooking } from "../../../services/googleSheetsService";
 import DatePicker from "../DatePicker/DatePicker";
 
 
 const BookingForm = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -92,7 +95,8 @@ const BookingForm = () => {
     });
 
     // Redirect to confirmation page
-    window.location.href = "/confirmation";
+    navigate("/confirmation");
+
 
   } catch (error) {
     console.error("Booking submission failed:", error);
