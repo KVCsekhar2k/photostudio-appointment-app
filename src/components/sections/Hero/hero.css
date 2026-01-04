@@ -57,6 +57,11 @@
   gap: 18px;
 }
 
+.link-text-button {
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:500;
+}
 .hero-primary-btn {
   padding: 14px 28px;
   background: #111;
