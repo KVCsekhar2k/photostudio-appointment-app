@@ -10,7 +10,7 @@ const pricingData = [
       "Candid & Traditional Coverage",
       "300+ Edited Photos",
       "Premium Album Included",
-      "Drone Shots (Optional)",
+      "Drone Shots",
     ],
   },
   {

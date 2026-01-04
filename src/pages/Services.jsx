@@ -30,7 +30,7 @@ const servicesData = [
     description:
       "Birthdays, engagements, corporate events, and celebrations captured with attention to detail.",
     image:
-      "https://images.unsplash.com/photo-1515169067865-5387ec356754",
+      "https://i.pinimg.com/1200x/e1/ad/47/e1ad47f6c5c1e11360eb69ccaa69a8d9.jpg",
   },
 ];
 
@@ -60,10 +60,9 @@ const Services = () => {
                 <div className="services-page-content">
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
-
-                  <a href="/book" className="services-page-btn">
-                    Book Now
-                  </a>
+                  
+                    <Link to="/book" className="services-page-btn">Book Now</Link>
+    
                 </div>
               </div>
             ))}
