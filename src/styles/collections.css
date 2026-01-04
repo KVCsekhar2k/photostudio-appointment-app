@@ -1,0 +1,98 @@
+.collections-page {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.collections-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.collections-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.collections-header h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.collections-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Filter Bar */
+.collections-filter {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.collections-filter button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.collections-filter button:hover {
+  background: #111;
+  color: #fff;
+}
+
+.collections-filter .active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* Grid */
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.collection-card {
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.collection-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collections-header h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,17 @@
+/* Home Page Wrapper */
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Main Content */
+.home-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: section spacing consistency */
+.home-content section {
+  width: 100%;
+}

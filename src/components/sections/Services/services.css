@@ -1,0 +1,223 @@
+.services {
+  background: linear-gradient(135deg, #fafafa, #fdfdfd);
+  padding: 100px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Centered wrapper */
+.services-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.services-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 70px;
+}
+
+.services-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.services-header p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Card */
+.service-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.service-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Content */
+.service-content {
+  padding: 28px 22px;
+  text-align: center;
+}
+
+.service-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Pricing Card */
+.pricing-card {
+  padding: 32px;
+  text-align: center;
+}
+
+.pricing-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #111;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  color: #caa45d;
+  margin-bottom: 8px;
+}
+
+
+.duration {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 24px;
+}
+
+/* Features */
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.features li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.features li::before {
+  
+  position: absolute;
+  
+  color: #caa45d;
+  font-size: 14px;
+}
+
+/* Button */
+.price-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.price-btn:hover {
+  background: #caa45d;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+
+
+/* Existing responsive for tablets */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* New responsive for mobile */
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Single card per row */
+    gap: 40px; /* More breathing space between cards */
+  }
+
+  .service-card {
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+    transform: none; /* Keep stable on mobile */
+  }
+
+  .service-card img {
+    height: 200px; /* Slightly smaller image for mobile */
+  }
+
+  .service-content {
+    padding: 24px 18px;
+  }
+
+  .service-content h3 {
+    font-size: 20px; /* Larger headings for readability */
+    margin-bottom: 12px;
+  }
+
+  .service-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .pricing-card h3 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 28px; /* Keep price bold and glowing */
+  }
+
+  .duration {
+    font-size: 14px;
+  }
+
+  .features li {
+    font-size: 15px;
+  }
+
+  .price-btn {
+    width: 100%; /* Full-width button for mobile */
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}

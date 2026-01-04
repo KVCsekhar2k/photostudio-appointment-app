@@ -1,0 +1,40 @@
+import "./hero.css";
+
+const Hero = () => {
+  return (
+    <section className="hero">
+      <div className="hero-wrapper">
+
+        {/* Image Block */}
+        <div className="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+            alt="Photography Studio"
+          />
+        </div>
+
+        {/* Content Block */}
+        <div className="hero-content">
+          <h1>Capture Moments That Last Forever</h1>
+
+          <p>
+            Premium photography services crafted to preserve your
+            weddings, portraits, and special occasions with elegance.
+          </p>
+
+          <div className="hero-buttons">
+            <a href="/book" className="hero-primary-btn">
+              Book Appointment
+            </a>
+            <a href="tel:+919999999999" className="hero-secondary-btn">
+              Call for Demo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
