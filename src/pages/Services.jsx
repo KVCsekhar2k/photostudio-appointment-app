@@ -1,5 +1,6 @@
 import Navbar from "../components/layout/Navbar/Navbar";
 import Footer from "../components/layout/Footer/Footer";
+import { Link } from "react-router-dom";
 import "../styles/servicesPage.css";
 
 const servicesData = [
@@ -71,7 +72,7 @@ const Services = () => {
           {/* Bottom CTA */}
           <div className="services-page-cta">
             <h2>Ready to book your shoot?</h2>
-            <a href="/book">Book an Appointment</a>
+            <a><Link to="/book">Book an Appointment</Link></a>
           </div>
 
         </div>

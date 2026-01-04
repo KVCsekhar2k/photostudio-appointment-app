@@ -30,6 +30,7 @@ const Navbar = () => {
         <div className="mobile-menu">
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link to="/collections" onClick={() => setMenuOpen(false)}>Collections</Link>
           <Link to="/book" onClick={() => setMenuOpen(false)}>Book</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>

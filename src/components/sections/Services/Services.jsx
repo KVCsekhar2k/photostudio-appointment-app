@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./services.css";
 
 const pricingData = [
@@ -74,8 +75,8 @@ const Services = () => {
                 ))}
               </ul>
 
-              <a href="/book" className="price-btn">
-                Book Now
+              <a href="/book" >
+                <Link to="/book" className="price-btn">Book Now</Link>
               </a>
 
             </div>

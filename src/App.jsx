@@ -8,9 +8,6 @@ import Confirmation from "./pages/Confirmation";
 import Collections from "./pages/Collections";
 
 
-
-
-
 function App() {
   return (
     <Routes>
