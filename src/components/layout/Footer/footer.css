@@ -34,6 +34,10 @@
   color: #ccc;
 }
 
+.footer-links-section {
+  text-decoration:none;
+  color: #ccc;
+}
 /* Links */
 .footer-section ul {
   list-style: none;
